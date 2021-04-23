@@ -1,4 +1,187 @@
-h1{
-    color: green;
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: active, Helvetica, sans-serif;
+    font-weight: normal;
+    color: rgb(45, 45, 45);
 }
+
+body{
+    background-image: url('../img/cardBackground.png'), url('../img/wheat.png');
+    background-repeat: no-repeat, repeat;
+    background-position: 50% 0
+}
+
+.container{
+    width: 100%;
+    max-width:  1100px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.yoganLogo{
+    padding-top: 50px;
+    padding-right: 370px;
+    width: 200px;
+
+}
+
+.cart{
+    position: absolute;
+    top: 150px;
+    padding-left: 600px;
+    font-size: 40px;
+    color: rgb(45, 45, 45);
+    font-weight: bold;
+}
+
+.cartTotal{
+    position: absolute;
+    top: 150px;
+    padding-left: 850px;
+    font-size: 40px;
+    color: rgb(45, 45, 45);
+}
+
+.cartName{
+    position: absolute;
+    top: 150px;
+    padding-left: 700px;
+    font-size: 40px;
+    color: rgb(45, 45, 45);
+}
+
+#title{
+    font-family: active, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 215px;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(45, 45, 45);
+    position: absolute ;
+    padding-left: 70px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.menu > li{
+    padding: 0px 20px;
+    font-family: active, sans-serif;
+    font-size: 50px;
+    color: rgb(45, 45, 45);
+    margin-bottom: 50px;
+}
+
+.popularChoices{
+    text-align: center;
+    font-size: 80px;
+    text-decoration: greenyellow;
+}
+
+.popularChoicesText{
+    text-align: center;
+}
+
+.recycleIconLeft{
+    position: absolute;
+    top: 400px;
+    padding-right: 1500px;
+    font-size: 250px;
+    color: rgb(45, 45, 45);
+    font-weight: bold;
+}
+
+.recycleIconRight{
+    position: absolute;
+    top: 400px;
+    padding-right: 1500px;
+    font-size: 250px;
+    color: rgb(45, 45, 45);
+    font-weight: bold;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    
+}
+
+.plantIconLeft{
+    position: absolute;
+    top: 700px;
+    padding-right: 1500px;
+    font-size: 250px;
+    color: rgb(45, 45, 45);
+    font-weight: bold;
+}
+
+.plantIconRight{
+    position: absolute;
+    top: 700px;
+    padding-right: 1500px;
+    font-size: 250px;
+    color: rgb(45, 45, 45);
+    font-weight: bold;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.globeIconLeft{
+    position: absolute;
+    padding-right: 1550px;
+    font-size: 250px;
+    top: 400px;
+    color: rgb(45, 45, 45);
+    font-weight: bold;
+}
+
+.globeIconRight{
+    position: absolute;
+    padding-right: 1500px;
+    font-size: 250px;
+    top: 400px;
+    color: rgb(45, 45, 45);
+    font-weight: bold;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.hundredImage{
+    display: block;
+    padding-top: 510px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.whoWeAre{
+    padding-top:100px;
+    text-align: center;
+    font-size: 80px;
+}
+
+
+
+
+
+
+
