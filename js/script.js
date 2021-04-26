@@ -10,11 +10,9 @@ function nextSlide(){
   slides[currentSlide].className = 'slide showing';
 }
 
-//Use querySelector to select an object from the DOM (Document Object Model)
 var btn = document.querySelector('.mobileNavBTN');
 var menu = document.querySelector('.menu');
 
-//Attach an event listener to the element, that listens for a click
 btn.addEventListener('click', ()=>{
     menu.classList.toggle('hide');
 });
