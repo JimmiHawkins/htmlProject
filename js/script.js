@@ -20,10 +20,10 @@ btn.addEventListener('click', ()=>{
 });
 
 window.addEventListener('resize', ()=>{
-    if(window.innerWidth > 610){
+    if(window.innerWidth > 1100){
         btn.classList.add('hide');
         menu.classList.remove('hide');
-    } else if(window.innerWidth < 610){
+    } else if(window.innerWidth < 1100){
         btn.classList.remove('hide');
         menu.classList.add('hide');
     }
