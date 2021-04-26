@@ -1,16 +1,33 @@
 *{
-    padding: 0;
-    margin: 0;
-    border: 0;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
     font-family: active, Helvetica, sans-serif;
     font-weight: normal;
     color: rgb(45, 45, 45);
+    
+
+
 }
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
 
 body{
     background-image: url('../img/cardBackground.png'), url('../img/wheat.png');
     background-repeat: no-repeat, repeat;
-    background-position: 50% 0
+    background-position: top center;
+    background-size: auto 100%;
+    
 }
 
 .container{
@@ -23,6 +40,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .yoganLogo{
@@ -32,41 +50,51 @@ header{
 
 }
 
+
 .cart{
     position: absolute;
     top: 150px;
-    padding-left: 600px;
+   padding-left: 580px;
     font-size: 40px;
     color: rgb(45, 45, 45);
     font-weight: bold;
-    text-shadow: -5px -5px 0 #fff, 5px -5px 0 #60A6B6
+    text-shadow: -5px -5px 0 #fff, 5px -5px 0 #60A6B6;
     
 }
 
-.cartTotal{
-    position: absolute;
-    top: 150px;
-    padding-left: 850px;
-    font-size: 40px;
-    color: rgb(45, 45, 45);
+.cartName > a:hover{
+    background-color: #60A6B6;
+    color: azure;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    transition: background-color 0.3s;
+    transition: 0.6s;
 }
 
 .cartName{
     position: absolute;
     top: 150px;
-    padding-left: 710px;
+    margin-left: 800px;
     font-size: 40px;
     color: rgb(45, 45, 45);
 }
 
 #title{
     font-size: 215px;
-    text-align: center;
     padding-top: 20px;
     color: rgb(45, 45, 45);
     position: absolute ;
-    padding-left: 120px;
+    margin-left: 120px;
     text-shadow: -5px -5px 0 #fff, 5px -5px 0 #60A6B6
+}
+
+.mobileNavBTN{
+    font-size: 50px;
+    padding: 5px;
+    margin-left: 50px;
+    background: transparent;
+    text-shadow: -3px -3px 0 #fff, 3px -3px 0 #60A6B6
 }
 
 .menu{
@@ -75,15 +103,32 @@ header{
     flex-direction: row;
     justify-content: center;
     padding-top: 20px;
+    
 }
 
 .menu > li{
     padding: 0px 20px;
-    font-family: active, sans-serif;
     font-size: 50px;
     color: rgb(45, 45, 45);
     margin-bottom: 50px;
+    transition: 0.6s;
     
+    
+    
+}
+
+
+.menu > li > a:hover{
+    background-color: #60A6B6;
+    color: azure;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: background-color 0.3s;
+    transition: 0.6s;
+}
+
+.hide{
+    display: none;
 }
 
 .popularChoices{
@@ -91,8 +136,8 @@ header{
     font-size: 80px;
     color: azure;
     background-color: #60A6B6;
-    margin-left: 330px;
-    margin-right: 330px;
+    margin-left: 300px;
+    margin-right: 300px;
     
     
 }
@@ -109,6 +154,7 @@ header{
     color: rgb(45, 45, 45);
     font-weight: bold;
     text-shadow: -5px -5px 0 #fff, 5px -5px 0 #60A6B6
+    
 }
 
 .recycleIconRight{
@@ -180,15 +226,15 @@ header{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 540px;
+    margin-top: 550px;
     width: 90%;
-    animation-name: example;
+    animation-name: scale;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
 
 }
 
-@keyframes example{
+@keyframes scale{
     0%   {width: 90%;}
     50% {width: 93%;}
     
@@ -258,49 +304,31 @@ header{
     }
 
     .theVeganLifeStyle{
-        margin-top:100px;
-        margin-left: 40px;
-        margin-right: 80px;
-        padding-left: 40px;
-        padding-right: 40px;
+        text-align: center;
         font-size: 80px;
-        position: absolute;
         color: azure;
         background-color: #60A6B6;
+        margin-top: 100px;
+        margin-left: 280px;
+        margin-right: 280px;
 
         
     }
 
     .theVeganLifeStyleText{
-        padding-top: 200px;
-        padding-right:15px;
+        margin-right:15px;
         text-align: left;
+        text-align: center;
 
     }
 
     .youtubeVideo{
        margin-top: 5px;
+       margin-bottom: 25px;
         border: 6px dashed #906C49;
         }
 
-    .calf{
-        width: 40%;
-        height: auto;
-        border: 6px dashed #906C49;
-        align-self: center;
-        margin-top: 75px;
-    }
-
-
-    .splitPage{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 30px;
-        
-    }
-
     .flavoursBookings{
-        font-size: 80px;
         list-style: none;
         display: flex;
         flex-direction: row;
@@ -308,10 +336,18 @@ header{
     }
 
     .flavoursBookings > li{
-        padding: 80px 100px;
+        padding: 60px 90px;
         font-size: 130px;
         margin: 5px;
+        margin-top: 30px;
         text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+
+    .flavoursBookings> li > a:hover{
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: background-color 0.3s;
+        transition: 0.6s;
     }
 
     .flavours{
@@ -332,8 +368,8 @@ header{
     list-style: none;
     display: flex;
     flex-direction: row;
+    margin-top: 60px;
     justify-content: center;
-    padding-top: 40px;
 }
 
 .bottomText > li{
@@ -344,6 +380,714 @@ header{
     margin-bottom: 50px;
 }
 
+.bottomText > li > a:hover{
+    background-color: #60A6B6;
+    color: azure;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: background-color 0.3s;
+    transition: 0.6s;
+}
+
+.bottomText > li > a > i:hover{
+    background-color: #60A6B6;
+    color: azure;
+    transition: background-color 0.3s;
+    transition: 0.6s;
+}
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 900px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        max-width: 0px;
+        
+        }
+    
+    
+        h1{
+            font-size: 25px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+        .menu{
+            display: block;
+            position: absolute;
+            top:195px;
+            left:0;
+            width: 100%;
+            background-color: rgba(255,255,255,0.9);
+        }
+    
+        .menu > li{
+            text-align: center;
+            padding: 0px;
+            margin: 0;
+            border-bottom: #60A6B6 solid 5px;
+    
+        }
+        
+        .hide{
+            display: none;
+        }
+    
+        .yoganLogo{
+            width: 100px;
+            margin-left: 410px;
+            margin-top: 40px;
+            padding: 0;
+            
+        }
+    
+        #title{
+            font-size: 120px;
+            margin-left: 670px;
+        }
+    
+        .popularChoices{
+            font-size: 50px;
+            padding: 0px;
+            margin: 0px;
+        }
+    
+        body{
+            background-image: none;
+            background-color: #D79A60;
+        }
+    
+        .recycleIconRight{
+            display: none;
+        }
+    
+        .recycleIconLeft{
+            display: none;
+        }
+    
+        .plantIconLeft{
+            display: none;
+        }
+    
+        .plantIconRight{
+            display: none;
+        }
+    
+        .globeIconLeft{
+            display: none;
+        }
+    
+        .globeIconRight{
+            display: none;
+        }
+    
+        .hundredImage{
+            width: 90%;
+            animation-name: scale;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            margin-top: 380px;
+            
+            
+        
+        }
+        
+        @keyframes scale{
+            0%   {width: 90%;}
+            50% {width: 93%;}
+            
+        }
+    
+        .hundredContainer{
+            position: absolute;
+            width: 600px;
+        
+        }
+    
+        .cart{
+            margin-left: 1000px;
+            margin-top: 7px;
+            
+    
+        }
+    
+        .cartName{
+            display: none;
+        }
+        
+    
+        .whoWeAre{
+            font-size: 50px;
+            margin-top: 550px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    
+        .theVeganLifeStyle{
+            font-size: 50px;
+            margin-top: 50px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    
+        .youtubeVideo{
+            width: 410px;
+            height: 250px;
+            margin-left: 7px;
+        }
+    
+        .flavoursBookings{
+            flex-direction: column;
+        }
+    
+        .flavoursBookings > li{
+            font-size: 50px;
+            padding: 20px 5px;
+            margin-top: 0;
+            text-align: center;
+        }
+    
+        .bottomText{
+            margin-top: 20px;
+    
+        }
+    
+        .bottomText > li{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 30px;
+            margin-bottom: 0px;
+            text-align: center;
+            
+        }
+    
+        .contactDetails{
+            display: none;
+        }
+    
+}
+
+}
+
+@media only screen and (max-width: 412px) {
+    header{
+        max-width: 0px;
+        
+        }
+    
+    
+        h1{
+            font-size: 25px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+        .menu{
+            display: block;
+            position: absolute;
+            top:195px;
+            left:0;
+            width: 100%;
+            background-color: rgba(255,255,255,0.9);
+        }
+    
+        .menu > li{
+            text-align: center;
+            padding: 0px;
+            margin: 0;
+            border-bottom: #60A6B6 solid 5px;
+    
+        }
+        
+        .hide{
+            display: none;
+        }
+    
+        .yoganLogo{
+            width: 100px;
+            margin-left: 230px;
+            margin-top: 40px;
+            padding: 0;
+            
+        }
+    
+        #title{
+            font-size: 120px;
+            margin-left: 490px;
+        }
+    
+        .popularChoices{
+            font-size: 50px;
+            padding: 0px;
+            margin: 0px;
+        }
+    
+        body{
+            background-image: none;
+            background-color: #D79A60;
+        }
+    
+        .recycleIconRight{
+            display: none;
+        }
+    
+        .recycleIconLeft{
+            display: none;
+        }
+    
+        .plantIconLeft{
+            display: none;
+        }
+    
+        .plantIconRight{
+            display: none;
+        }
+    
+        .globeIconLeft{
+            display: none;
+        }
+    
+        .globeIconRight{
+            display: none;
+        }
+    
+        .hundredImage{
+            width: 90%;
+            animation-name: scale;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            margin-top: 320px;
+            
+            
+        
+        }
+        
+        @keyframes scale{
+            0%   {width: 90%;}
+            50% {width: 93%;}
+            
+        }
+    
+        .hundredContainer{
+            position: absolute;
+            width: 412px;
+        
+        }
+    
+        .cart{
+            margin-left: 650px;
+            margin-top: 7px;
+            
+    
+        }
+    
+        .cartName{
+            display: none;
+        }
+        
+    
+        .whoWeAre{
+            font-size: 50px;
+            margin-top: 450px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    
+        .theVeganLifeStyle{
+            font-size: 50px;
+            margin-top: 50px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    
+        .youtubeVideo{
+            width: 310px;
+            height: 200px;
+            margin-left: 7px;
+        }
+    
+        .flavoursBookings{
+            flex-direction: column;
+        }
+    
+        .flavoursBookings > li{
+            font-size: 50px;
+            padding: 20px 5px;
+            margin-top: 0;
+            text-align: center;
+        }
+    
+        .bottomText{
+            margin-top: 20px;
+    
+        }
+    
+        .bottomText > li{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 30px;
+            margin-bottom: 0px;
+            text-align: center;
+            
+        }
+    
+        .contactDetails{
+            display: none;
+        }
+    
+}
+
+    
+}
+
+@media only screen and (max-width: 393px) {
+
+    header{
+        max-width: 0px;
+        
+        }
+    
+    
+        h1{
+            font-size: 25px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+        .menu{
+            display: block;
+            position: absolute;
+            top:195px;
+            left:0;
+            width: 100%;
+            background-color: rgba(255,255,255,0.9);
+        }
+    
+        .menu > li{
+            text-align: center;
+            padding: 0px;
+            margin: 0;
+            border-bottom: #60A6B6 solid 5px;
+    
+        }
+        
+        .hide{
+            display: none;
+        }
+    
+        .yoganLogo{
+            width: 100px;
+            margin-left: 210px;
+            margin-top: 40px;
+            padding: 0;
+            
+        }
+    
+        #title{
+            font-size: 120px;
+            margin-left: 470px;
+        }
+    
+        .popularChoices{
+            font-size: 50px;
+            padding: 0px;
+            margin: 0px;
+        }
+    
+        body{
+            background-image: none;
+            background-color: #D79A60;
+        }
+    
+        .recycleIconRight{
+            display: none;
+        }
+    
+        .recycleIconLeft{
+            display: none;
+        }
+    
+        .plantIconLeft{
+            display: none;
+        }
+    
+        .plantIconRight{
+            display: none;
+        }
+    
+        .globeIconLeft{
+            display: none;
+        }
+    
+        .globeIconRight{
+            display: none;
+        }
+    
+        .hundredImage{
+            width: 90%;
+            animation-name: scale;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            margin-top: 320px;
+            
+            
+        
+        }
+        
+        @keyframes scale{
+            0%   {width: 90%;}
+            50% {width: 93%;}
+            
+        }
+    
+        .hundredContainer{
+            position: absolute;
+            width: 393px;
+        
+        }
+    
+        .cart{
+            margin-right: 10px;
+            margin-top: 7px;
+            
+    
+        }
+    
+        .cartName{
+            display: none;
+        }
+        
+    
+        .whoWeAre{
+            font-size: 50px;
+            margin-top: 450px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    
+        .theVeganLifeStyle{
+            font-size: 50px;
+            margin-top: 50px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    
+        .youtubeVideo{
+            width: 310px;
+            height: 200px;
+            margin-left: 7px;
+        }
+    
+        .flavoursBookings{
+            flex-direction: column;
+        }
+    
+        .flavoursBookings > li{
+            font-size: 50px;
+            padding: 20px 5px;
+            margin-top: 0;
+            text-align: center;
+        }
+    
+        .bottomText{
+            margin-top: 20px;
+    
+        }
+    
+        .bottomText > li{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 30px;
+            margin-bottom: 0px;
+            text-align: center;
+            
+        }
+    
+        .contactDetails{
+            display: none;
+        }
+    
+}
+
+@media only screen and (max-width: 360px) {
+
+    header{
+    max-width: 0px;
+    
+    }
+
+
+    h1{
+        font-size: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        top:195px;
+        left:0;
+        width: 100%;
+        background-color: rgba(255,255,255,0.9);
+    }
+
+    .menu > li{
+        text-align: center;
+        padding: 0px;
+        margin: 0;
+        border-bottom: #60A6B6 solid 5px;
+
+    }
+    
+    .hide{
+        display: none;
+    }
+
+    .yoganLogo{
+        width: 100px;
+        margin-left: 180px;
+        margin-top: 40px;
+        padding: 0;
+        
+    }
+
+    #title{
+        font-size: 120px;
+        margin-left: 440px;
+    }
+
+    .popularChoices{
+        font-size: 50px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body{
+        background-image: none;
+        background-color: #D79A60;
+    }
+
+    .recycleIconRight{
+        display: none;
+    }
+
+    .recycleIconLeft{
+        display: none;
+    }
+
+    .plantIconLeft{
+        display: none;
+    }
+
+    .plantIconRight{
+        display: none;
+    }
+
+    .globeIconLeft{
+        display: none;
+    }
+
+    .globeIconRight{
+        display: none;
+    }
+
+    .hundredImage{
+        width: 90%;
+        animation-name: scale;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        margin-top: 320px;
+        
+    
+    }
+    
+    @keyframes scale{
+        0%   {width: 90%;}
+        50% {width: 93%;}
+        
+    }
+
+    .hundredContainer{
+        position: absolute;
+        width: 340px;
+    
+    }
+
+    .cart{
+        margin-right: 40px;
+        margin-top: 7px;
+        
+
+    }
+
+    .cartName{
+        display: none;
+    }
+    
+
+    .whoWeAre{
+        font-size: 50px;
+        margin-top: 450px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .theVeganLifeStyle{
+        font-size: 50px;
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .youtubeVideo{
+        width: 310px;
+        height: 200px;
+        margin-left: 7px;
+    }
+
+    .flavoursBookings{
+        flex-direction: column;
+    }
+
+    .flavoursBookings > li{
+        font-size: 50px;
+        padding: 20px 5px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .bottomText{
+        margin-top: 20px;
+
+    }
+
+    .bottomText > li{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 30px;
+        margin-bottom: 0px;
+        text-align: center;
+        
+    }
+
+    .contactDetails{
+        display: none;
+    }
+
+
+
+    
+
+
+
+    
+}
 
 
 

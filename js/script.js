@@ -9,3 +9,22 @@ function nextSlide(){
   currentSlide = (currentSlide+1)%slides.length;
   slides[currentSlide].className = 'slide showing';
 }
+
+//Use querySelector to select an object from the DOM (Document Object Model)
+var btn = document.querySelector('.mobileNavBTN');
+var menu = document.querySelector('.menu');
+
+//Attach an event listener to the element, that listens for a click
+btn.addEventListener('click', ()=>{
+    menu.classList.toggle('hide');
+});
+
+window.addEventListener('resize', ()=>{
+    if(window.innerWidth > 610){
+        btn.classList.add('hide');
+        menu.classList.remove('hide');
+    } else if(window.innerWidth < 610){
+        btn.classList.remove('hide');
+        menu.classList.add('hide');
+    }
+})
